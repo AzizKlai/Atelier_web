@@ -1,0 +1,103 @@
+body {
+    margin: 0%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+/*
+body *{border: 1px solid black;}
+.header{ text-align: center; align-self: center;
+    display: block;
+   padding: 0px;
+   margin: 0%;
+
+}*/
+
+.header-img {
+    margin: 0%;
+    padding: 0%;
+}
+
+.header-img img[alt="header1"],
+footer img {
+    width: 50%;
+    height: auto;
+    padding: 0%;
+    margin: 0%;
+}
+
+.container {
+    position: relative;
+    margin: 0 auto;
+    width: min-content;
+}
+
+.imghd {
+    margin: 0 auto;
+    position: relative;
+    top: -3px;
+    width: min-content;
+    font-size: 14px;
+    text-align: center;
+    padding: 0px;
+    overflow: hidden;
+}
+
+.fond {
+    zoom: 100%;
+}
+
+.logo {
+    float: left;
+    position: absolute;
+    top: 0%;
+    left: -1%;
+    zoom: 100%;
+}
+
+.header-nav {
+    background-color: brown;
+    font-size: x-large;
+    font-weight: 500;
+    display: flex;
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+}
+
+.header-nav a {
+    padding: 2%;
+    float: left;
+    width: 20%;
+    color: inherit;
+    text-decoration: none;
+    color: white;
+}
+
+.header-nav a:hover {
+    background-position: right;
+    background-color: black;
+    background-image: url(./src/rings.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+a,
+h1 {
+    color: brown;
+    text-decoration: none;
+}
+
+td {
+    width: 25%;
+    padding-bottom: 0%;
+}
+
+.photo {
+    zoom: 100%;
+    margin-bottom: 10%;
+}
+
+footer {
+    margin-bottom: 0px;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="author" content="Klai mohamed aziz">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inscriptin Licence</title>
+
+</head>
+
+<body style="text-align: center;">
+  <h1>Inscription en licence</h1>
+  <form action="./ex3_insat.html" method="get">
+    <fieldset>
+      <legend>inforamtions personnelles</legend>
+      <label>votre nom<input type="text" name="nom" placeholder="Votre nom?"></label><br><br>
+      Votre prenom:<input type="text" name="votre prénom" placeholder="Votre prenom?"><br><br>
+      Votre age:<input type="number" name="votre age" placeholder="Votre age" max="100"><br><br>
+      L'année de naissance: <input type="date"><br><br>
+      Votre adresse:<TEXTAREA NAME="adresse" ROWS=5 COLS=40 placeholder="Votre adresse?"></TEXTAREA> <br><br>
+      Mot de pass: <input type="password" required="required"><br><br>
+      Retaper votre mot de pass: <input type="password" required><br><br>
+    </fieldset>
+    <fieldset>
+      <legend style="text-align: center;">Gestion des groupes et des options</legend>
+      <label>Votre groupe</label><INPUT TYPE="radio" NAME="groupe 1" VALUE="valeur1">Groupe 1
+      &nbsp; <INPUT TYPE="radio" NAME="groupe 2" VALUE="valeur2">Groupe 2
+      &nbsp; <INPUT TYPE="radio" NAME="groupe 3" VALUE="valeur3">Groupe 3 <br><br>
+      <label> Numéro de carte d'étudiant: <input type="text"></label><br><br>
+      Choisissez les options que vous désirez:<select size="5">
+        <option value="J2aa">J2aa</option>
+        <option value="Android">Android</option>
+        <option value=".Net">.Net</option>
+        <option value="HTML5">HTML5</option>
+        <option value="Flex">Flex</option><br>
+      </select><br><br>
+      Votre mail: <input type="email"><br><br>
+      Url de votre site: <input type="url"><br><br>
+      Code INSAT: <input type="text" pattern="[I][N][S][A][T][0-9]{4}" required>
+    </fieldset>
+    <input type="submit" value="valider">
+    <input type="reset" value="réinitialiser">
+  </form>
+</body>
+
+</html>
