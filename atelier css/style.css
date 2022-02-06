@@ -33,6 +33,7 @@ footer img {
 }
 
 .imghd {
+    background-color: brown;
     margin: 0 auto;
     position: relative;
     top: -4px;
