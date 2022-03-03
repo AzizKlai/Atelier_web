@@ -1,0 +1,16 @@
+body {
+    background-color: #cfcfcf;
+    width: 98%;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+div.col {
+    margin: 1%;
+}
