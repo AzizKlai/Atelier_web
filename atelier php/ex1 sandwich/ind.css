@@ -1,0 +1,10 @@
+body {
+    background-image: url(./tomate.jpg);
+    width: 98%;
+    margin: 1%;
+}
+
+.form-check {
+    color: white;
+    font-size: larger;
+}
