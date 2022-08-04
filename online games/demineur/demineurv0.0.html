@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="aziz Klai">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.">
+    <link rel="stylesheet" href="./demineurstyle.css">
+    <link rel="stylesheet" href="./FACEstylel.css">
+    <title>demineur</title>
+</head>
+
+<body>
+    <div class="partie">
+        <table>
+            <th>
+                <p id="nbomb">10</p>
+            </th>
+            <th><button class="face">
+                <div class="eyes">
+                    <div class="eye"> </div>
+                    <div class="eye"></div>
+                </div>
+            </button></th>
+            <th>
+                <p id="niveau">X</p>
+            </th>
+        </table>
+
+
+
+
+        <div id="scroll-container">
+            <div id="scroll-text">
+
+            </div>
+        </div>
+        <table>
+            <tbody class="tbody"></tbody>
+            <!--<tr>
+                <td id="1" class="off 4   bomb"></td>
+                <td id="2" class="off 2  "></td>
+                <td id="3" class="off 4   bomb"></td>
+                <td id="4" class="off 4   bomb"></td>
+                <td id="5" class="off 2  "></td>
+                <td id="6" class="off 1   "></td>
+                <td id="7" class="off 0"></td>
+                <td id="8" class="off 0"></td>
+                <td id="9" class="off 0"></td>
+            </tr>
+            <tr>
+                <td id="10" class="off 1  "></td>
+                <td id="11" class="off 2  "></td>
+                <td id="12" class="off 2  "></td>
+                <td id="13" class="off 3  "></td>
+                <td id="14" class="off 4  bomb "></td>
+                <td id="15" class="off 1  "></td>
+                <td id="16" class="off 0"></td>
+                <td id="17" class="off 0"></td>
+                <td id="18" class="off 0"></td>
+            </tr>
+            <tr>
+                <td id="19" class="off 0"></td>
+                <td id="20" class="off 0"></td>
+                <td id="21" class="off 0"></td>
+                <td id="22" class="off 1   "></td>
+                <td id="23" class="off 1   "></td>
+                <td id="24" class="off 1   "></td>
+                <td id="25" class="off 0"></td>
+                <td id="26" class="off 0"></td>
+                <td id="27" class="off 0"></td>
+            </tr>
+            <tr>
+                <td id="28" class="off 0"></td>
+                <td id="29" class="off 0"></td>
+                <td id="30" class="off 0"></td>
+                <td id="31" class="off 0"></td>
+                <td id="32" class="off 0"></td>
+                <td id="33" class="off 0"></td>
+                <td id="34" class="off 0"></td>
+                <td id="35" class="off 0"></td>
+                <td id="36" class="off 0"></td>
+            </tr>
+            <tr>
+                <td id="37" class="off 1   "></td>
+                <td id="38" class="off 1   "></td>
+                <td id="39" class="off 0"></td>
+                <td id="40" class="off 0"></td>
+                <td id="41" class="off 0"></td>
+                <td id="42" class="off 0"></td>
+                <td id="43" class="off 0"></td>
+                <td id="44" class="off 1   "></td>
+                <td id="45" class="off 1   "></td>
+            </tr>
+            <tr>
+                <td id="46" class="off 4   bomb"></td>
+                <td id="47" class="off 1   "></td>
+                <td id="48" class="off 0"></td>
+                <td id="49" class="off 0"></td>
+                <td id="50" class="off 0"></td>
+                <td id="51" class="off 0"></td>
+                <td id="52" class="off 0"></td>
+                <td id="53" class="off 1   "></td>
+                <td id="54" class="off 4   bomb"></td>
+            </tr>
+            <tr>
+                <td id="55" class="off 1   "></td>
+                <td id="56" class="off 2   "></td>
+                <td id="57" class="off 2   "></td>
+                <td id="58" class="off 2   "></td>
+                <td id="59" class="off 1   "></td>
+                <td id="60" class="off 0"></td>
+                <td id="61" class="off 0"></td>
+                <td id="62" class="off 1   "></td>
+                <td id="63" class="off 1   "></td>
+            </tr>
+            <tr>
+                <td id="64" class="off 0"></td>
+                <td id="65" class="off 2   "></td>
+                <td id="66" class="off 4   bomb"></td>
+                <td id="67" class="off 4   bomb"></td>
+                <td id="68" class="off 1  "></td>
+                <td id="69" class="off 1  "></td>
+                <td id="70" class="off 1  "></td>
+                <td id="71" class="off 1   "></td>
+                <td id="72" class="off 0"></td>
+            </tr>
+            <tr>
+                <td id="73" class="off 0"></td>
+                <td id="74" class="off 2   "></td>
+                <td id="75" class="off 4   bomb"></td>
+                <td id="76" class="off 3  "></td>
+                <td id="77" class="off 1  "></td>
+                <td id="78" class="off 1  "></td>
+                <td id="79" class="off 4   bomb"></td>
+                <td id="80" class="off 1   "></td>
+                <td id="81" class="off 0"></td>
+            </tr> -->
+
+
+        </table>
+    </div>
+
+    <script>
+        // definir le niveau de jeu
+        const niv = document.querySelector("#niveau");
+        niv.addEventListener("click", function(e) {
+            niv.textContent = "X".repeat((niv.textContent.length % 3) + 1);
+        })
+
+        //smile script
+        let mousee = true;
+
+
+        function eyeball() {
+            var eye = document.querySelectorAll('.eye');
+            eye.forEach(function(eye) {
+                let x = eye.getBoundingClientRect().left +
+                    eye.clientWidth / 2;
+                let y = eye.getBoundingClientRect().top +
+                    eye.clientHeight / 2;
+                radian = Math.atan2(event.pageX - x, event.pageY - y);
+
+                let rot = radian * (180 / Math.PI) * -1 + 270;
+                eye.style.transform = "rotate(" + rot + "deg)";
+            });
+
+        }
+
+        function eyeball2() {
+            var eye = document.querySelectorAll('.eye');
+            eye.forEach(function(eye) {
+                let x = eye.getBoundingClientRect().left +
+                    eye.clientWidth / 2;
+                let y = eye.getBoundingClientRect().top +
+                    eye.clientHeight / 2;
+
+                let followeddiv = document.querySelector("#h-scroll").getBoundingClientRect();
+                radian = Math.atan2(followeddiv.left - x, followeddiv.top - y);
+                let rot = radian * (180 / Math.PI) * -1 + 270;
+                eye.style.transform = "rotate(" + rot + "deg)";
+            });
+
+        }
+        /*let mousee = true
+        document.querySelector('body').addEventListener('mousemove', eyeball);
+
+
+        function eyeball() {
+
+            var eye = document.querySelectorAll('.eye');
+            eye.forEach(function(eye) {
+                let x = eye.getBoundingClientRect().left +
+                    eye.clientWidth / 2;
+                let y = eye.getBoundingClientRect().top +
+                    eye.clientHeight / 2;
+
+                switch (mousee) {
+                    case true:
+                        radian = Math.atan2(event.pageX - x, event.pageY - y);
+                        break;
+                    case false:
+                        let divwin = document.querySelector('#h-scroll');
+                        radian = Math.atan2(divwin.getBoundingClientRect().left - x, divwin.getBoundingClientRect().right - y);
+                        break;
+                    default:
+                        break;
+                }
+                let rot = radian * (180 / Math.PI) * -1 + 270;
+                eye.style.transform = "rotate(" + rot + "deg)";
+            });
+        }
+        //if (!mousee) {
+        //  document.querySelector('body').removeEventListener('mousemove', eyeball)
+        // setInterval(eyeball, 50);
+        //}*/
+    </script>
+    <script src="./demineurjss.js"></script>
+
+</body>
+
+</html>
