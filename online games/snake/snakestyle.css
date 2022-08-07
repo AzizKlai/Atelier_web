@@ -1,0 +1,35 @@
+div,
+table {
+    margin: 0 auto;
+    margin-top: 5%;
+}
+
+
+/*{
+    border: solid 1px gray;
+    border-radius: 5px;
+}*/
+
+tr {
+    height: 20px;
+    width: 200px;
+}
+
+.partie td {
+    height: 20px;
+    width: 20px;
+    padding: 0%;
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("./src/t.png");
+}
+
+button {
+    height: 40px;
+    width: 40px;
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("./src/t6.png");
+}
